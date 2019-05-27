@@ -116,6 +116,7 @@
     "lint": "tslint --project tsconfig.json -e 'node_modules/**'",
     "lint:fix": "npm run lint -- --fix",
     "ngc": "ngc -p tsconfig-aot.json",
+    "clean": "rimraf node_modules",
     "cleanup": "rimraf target/classes/static/ target/classes/aot",
     "clean-www": "rimraf target/classes/static/app/{src,target/}",
     "e2e": "protractor src/test/javascript/protractor.conf.js",
