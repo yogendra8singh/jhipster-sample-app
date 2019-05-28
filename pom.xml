@@ -529,10 +529,7 @@
                         </from>
                         <to>
                             <image>registry.hub.docker.com/{yogi8demo}/jhipstersampleapplication:latest</image>
-                            <auth>
-	                            <username>yogi8demo</username>
-	                            <password>{drNBEWJU8TYH/74z4wLFVku6e4NgZtFSo0JK7i3suBA=}</password>
-                            </auth>
+                         
                         </to>
                         <container>
                             <entrypoint>
