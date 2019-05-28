@@ -528,7 +528,8 @@
                             <image>adoptopenjdk/openjdk11:alpine-jre</image>
                         </from>
                         <to>
-                            <image>jhipstersampleapplication:latest</image>
+                            <image>registry.hub.docker.com/{yogi8demo}/jhipstersampleapplication:latest</image>
+                            
                         </to>
                         <container>
                             <entrypoint>
