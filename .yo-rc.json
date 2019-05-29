@@ -38,6 +38,17 @@
     "otherModules": [],
     "entitySuffix": "",
     "dtoSuffix": "DTO",
-    "clientTheme": "none"
+    "clientTheme": "none",
+    "appsFolders": [
+      "jhipster-sample-app"
+    ],
+    "directoryPath": "../",
+    "dockerRepositoryName": "Docker Hub",
+    "dockerPushCommand": "",
+    "kubernetesNamespace": "default",
+    "kubernetesServiceType": "LoadBalancer",
+    "ingressDomain": "",
+    "monitoring": "prometheus",
+    "istio": false
   }
 }
