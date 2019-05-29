@@ -5,8 +5,8 @@
 You will need to push your image to a registry. If you have not done so, use the following commands to tag and push the images:
 
 ```
-$ docker image tag jhipstersampleapplication Docker Hub/jhipstersampleapplication
-$  Docker Hub/jhipstersampleapplication
+$ docker image tag jhipstersampleapplication yogi8demo/jhipstersampleapplication
+$ jhipstersampleapplication yogi8demo/jhipstersampleapplication
 ```
 
 ## Deployment

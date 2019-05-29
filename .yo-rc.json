@@ -43,8 +43,8 @@
       "jhipster-sample-app"
     ],
     "directoryPath": "../",
-    "dockerRepositoryName": "Docker Hub",
-    "dockerPushCommand": "",
+    "dockerRepositoryName": "yogi8demo",
+    "dockerPushCommand": "jhipstersampleapplication",
     "kubernetesNamespace": "default",
     "kubernetesServiceType": "LoadBalancer",
     "ingressDomain": "",

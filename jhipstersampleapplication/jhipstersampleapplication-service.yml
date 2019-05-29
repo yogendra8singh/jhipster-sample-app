@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: jhipstersampleapplication
+  namespace: default
+  labels:
+    app: jhipstersampleapplication
+spec:
+  selector:
+    app: jhipstersampleapplication
+  type: LoadBalancer
+  ports:
+    - name: http
+      port: 8080
