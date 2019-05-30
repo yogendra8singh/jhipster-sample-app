@@ -58,7 +58,7 @@ node {
         // https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin#authentication-methods
         sh "./mvnw jib:build"
     }
-    stage('Deployment'){
+    stage('deployment'){
        sh "sudo chmod +x kubectl-apply.sh && ./kubectl-apply.sh"
     }
 }
