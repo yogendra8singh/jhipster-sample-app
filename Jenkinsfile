@@ -59,6 +59,6 @@ node {
         sh "./mvnw jib:build"
     }
     stage('deployment'){
-       sh "chmod +x kubectl-apply.sh && ./kubectl-apply.sh"
+       sh "chmod +x kubectl-apply.sh && export KUBECONFIG=$HOME/.kube/config  && echo $KUBECONFIG &&./kubectl-apply.sh"
     }
 }
