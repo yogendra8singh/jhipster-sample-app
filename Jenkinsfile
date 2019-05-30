@@ -59,6 +59,6 @@ node {
         sh "./mvnw jib:build"
     }
     stage('deployment'){
-       sh "sudo chmod +x kubectl-apply.sh && ./kubectl-apply.sh"
+       sh "chmod +x kubectl-apply.sh && ./kubectl-apply.sh"
     }
 }
