@@ -58,6 +58,9 @@ node {
         // https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin#authentication-methods
         sh "./mvnw jib:build"
     }
+    stage('get cluster'){
+      sh "gcloud container clusters get-credentials default"
+    }
     stage('deployment'){
        sh "chmod +x kubectl-apply.sh && export KUBECONFIG=$HOME/.kube/config  &&./kubectl-apply.sh"
     }
