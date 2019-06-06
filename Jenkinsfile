@@ -59,6 +59,9 @@ node {
         sh "./mvnw jib:build"
     }
     stage('deployment'){
-       sh "chmod +x kubectl-apply.sh && export KUBECONFIG=$HOME/.kube/config  && echo $KUBECONFIG &&./kubectl-apply.sh"
+       sh "chmod +x kubectl-apply.sh && export KUBECONFIG=$HOME/.kube/config  &&./kubectl-apply.sh"
+    }
+    stage('App IP'){
+       sh "kubectl get svc jhipstersampleapplication"
     }
 }
