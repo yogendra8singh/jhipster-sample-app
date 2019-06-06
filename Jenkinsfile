@@ -65,6 +65,7 @@ node {
        sh "chmod +x kubectl-apply.sh   &&  ./kubectl-apply.sh"
     }
     stage('App IP'){
+       sh "sleep 60"
        sh "kubectl get svc jhipstersampleapplication"
     }
 }
