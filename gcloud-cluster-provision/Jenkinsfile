@@ -1,0 +1,14 @@
+#!/usr/bin/env groovy
+
+node {
+    stage('validate account') {
+		sh "gcloud auth list"
+	}
+    stage('configure timezone') {
+        sh "gcloud config set compute/zone us-central1-a"
+    }
+    stage('cluster provisioning') {
+        sh "gcloud container clusters create default --num-nodes 3"
+        sh "sleep 60"
+    }
+}
