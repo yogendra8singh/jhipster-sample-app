@@ -2,6 +2,6 @@
 
 node {
     stage('cluster teardown') {
-        sh 'gcloud container clusters delete default'
+        sh 'gcloud container clusters delete default --quiet'
     }
 }
