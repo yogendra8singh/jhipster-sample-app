@@ -45,7 +45,7 @@ Using livenessProbes and readinessProbe allow you to tell Kubernetes about the s
 
 ## Monitoring tools
 
-### Prometheus metrics
+### Prometheus metrics (setup giving error)
 
 Generator is also packaged with [Prometheus operator by CoreOS](https://github.com/coreos/prometheus-operator).
 
